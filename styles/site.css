@@ -1,0 +1,441 @@
+/* Prompt: Use index.html and ideation.html as context. Create a playful, exciting, and informative CSS style for new Magic: The Gathering players. Don't use any media queries, interactive design, or var(). Make it simple. */
+
+html {
+    background-color: #000000;
+    color: white;
+    line-height: 1.25;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    border: 4px solid #2f1847;
+    border-style: none none groove none;
+
+    margin: 0;
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 16px;
+}
+
+/* Including padding and border, the max-width of header img needs to be the same as .empty-container. */
+header img {
+    max-width: 28px;
+    vertical-align: middle;
+    margin: 0 12px 0 6px;
+}
+
+.outline {
+    background-color: #2f1847;
+    border-radius: 4px;
+    border: 2px solid #2f1847;
+    border-style:inset;
+    vertical-align: middle;
+    margin: 0 6px 0 0;
+    padding: 4px;
+}
+
+.outline img {
+    margin: 0;
+}
+
+.empty-container {
+    max-width: 40px;
+    flex-grow: 1;
+}
+
+h1 {
+	font-size: 1.5rem;
+    text-align: center;
+    align-content: center;
+
+    margin: 12px 0 12px 0;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #2f1847;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a{
+	display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    border: 4px solid #2f1847;
+    border-style: groove none none none;
+	color: #ffffff;
+
+	padding: 6px 0px;
+    margin: 0;
+}
+
+/* Shows which page you're currently on in navigation. */
+nav .current-page {
+    color: #e3bbff;
+    text-decoration: underline;
+}
+
+img {
+    margin: 8px 0 16px 0;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+section {
+    background-color: #dfc9ff;
+    color: black;
+
+    margin: 0 auto;
+    padding: 12px 16px 12px 16px;
+}
+
+.alternate-section {
+    background-color: #2f1847;
+    color: white;
+}
+
+/* The lighter-colored rounded border outline. */
+.color-decor {
+    background-color: #e5d4ff;
+    border-radius: 10px;
+    max-width: 500px;
+
+    margin: 12px auto;
+    padding: 4px 16px 12px 16px;
+}
+
+.alternate-section .color-decor {
+    background-color: #381e55;
+}
+
+h2 {
+    margin: 24px 0 12px 0;
+}
+
+h3 {
+    color: #4b1978;
+    margin: 24px 0 8px 0;
+}
+
+.alternate-section h3 {
+    color: #e3bbff;
+}
+
+h4 {
+    color: #4b1978;
+    text-decoration: underline;
+    margin: 12px 0 4px 0;
+}
+
+strong {
+    color: #4b1978;
+}
+
+em {
+    font-weight: bold;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+footer p {
+    margin: 16px 0;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0 0 0 32px;
+}
+
+li {
+    margin: 0 0 8px 0;
+}
+
+a {
+    color: #ff99f3;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+button {
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    text-align: center;
+    font-size: 16px;
+    color: #4b1978;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+
+    margin: 0;
+    padding: 0;
+}
+
+.container p {
+    text-align: center;
+    font-size: 16px;
+    color: #4b1978;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+
+    margin: 0;
+}
+
+.transparent {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #2f1847d0;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+dialog {
+    display: block;
+    background-color: transparent;
+    max-width: 375px;
+    border: none;
+    margin: 0 auto;
+}
+
+dialog section {
+    border-radius: 12px;
+    padding: 4px 28px;
+}
+
+dialog img {
+    margin: 4px 0 12px 0;
+}
+
+dialog .container {
+    justify-content: space-between;
+}
+
+dialog .container button {
+    align-self: last baseline;
+}
+
+#xA {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+dialog .container h3 {
+    align-self: last baseline;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media (min-width: 825px) {
+    main {
+        background-color: #383838;
+    }
+
+    header {
+        border: none;
+    }
+
+    header ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: 16px;
+        background-color: transparent;
+        border: none;
+        margin: 0 24px;
+    }
+
+    h1 {
+        font-size: 16px;
+        max-width: 200px;
+        z-index: 1;
+        position: absolute;
+        left: 24px;
+        top: 12px;
+        margin: 0;
+    }
+
+    #ham {
+        display: none;
+    }
+
+    nav {
+        margin: 0 auto;
+    }
+
+    nav a {
+        background-color: #2f1847;
+        padding: 4px 4px;
+        border: 4px solid #2f1847;
+        border-style: inset;
+
+        margin: 4px 0;
+    }
+
+
+
+    .color-decor {
+        max-width: 1000px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .container-wide {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .start-align {
+        align-items: start;
+        align-self: start;
+    }
+
+    .container-box {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 1064px;
+        gap: 16px;
+        margin: 0 auto;
+    }
+
+    #home-img {
+        min-width: 350px;
+    }
+
+    #home-resources-align {
+        align-items: unset;
+        gap: 32px;
+    }
+
+    #home-resources-align h3 {
+        margin: 0;
+        margin-top: 4px;
+    }
+
+    #home-resources-align ul {
+        margin-bottom: 16px;
+    }
+
+    #formats-resources-align-2 {
+        align-items: start;
+    }
+
+    #formats-resources-align picture {
+        /* min-width: 500px; */
+        min-width: 400px;
+        width: 100%;
+    }
+
+    #ideation-resources-align h3 {
+        margin: 0 0 8px 0;
+    }
+
+    #ideation-resources-align picture {
+        min-width: 300px;
+        max-width: 350px;
+    }
+
+    .ideation-resources-align-2 {
+        width: 100%;
+        min-width: 400px;
+        max-width: 500px;
+    }
+    .ideation-resources-align-2 button, .ideation-resources-align-2 img {
+        min-width: 600px;
+    }
+
+    #ideation-resources-align-3 picture {
+        min-width: 400px;
+    }
+
+    #deck-list p, li, #deckbuilding-section h2 {
+        max-width: 800px;
+    }
+
+    #deckbuilding-img img {
+        margin: 16px 0;
+    }
+
+    #deckbuilding-section h2 {
+        margin-bottom: 0;
+    }
+
+    .cheat-sheet article {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    header ul {
+        justify-content: center;
+    }
+
+    #formats-resources-align picture {
+        min-width: 500px;
+    }
+
+    #home-img {
+        min-width: 400px;
+    }
+
+    .ideation-resources-align-2 {
+        width: unset;
+    }
+}
+
+@media (pointer: coarse) {
+    footer p a {
+        font-size: 24px;
+    }
+}

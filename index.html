@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- I used CoPilot to help me stucture all of the code below. -->
+<head>
+  <link rel="icon" href="images/favicon.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/site.css" rel="stylesheet">
+  <title>MTG: Deck Haven</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!-- The empty container helps center my h1 and right-align my hamburger icon. It's being used stylistically here. -->
+      <div class="empty-container">
+      </div>
+      <h1 id="top">MTG: Deck Haven</h1>
+      <button id="ham" aria-label="Show website navigation.">
+        <img src="images/hamburger-icon.svg" alt="Hamburger menu icon.">
+      </button>
+    </div>
+    <nav class="hidden" id="nav-interact">
+      <ul>
+        <li><a class="current-page" href="index.html">Home</a></li>
+        <li><a href="formats.html">Popular Formats</a></li>
+        <li><a href="ideation.html">Ideation Strategy</a></li>
+        <li><a href="deckbuilding.html">Deckbuilding</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="color-decor container-wide">
+        <div>
+          <h2>Welcome</h2>
+
+          <p>Whether you’re new to Magic: The Gathering (MTG) or a seasoned spell-slinger refining your next masterpiece, you’ve come to the right place. Here, we focus on what makes Magic truly exciting — building decks that reflect your playstyle, creativity, and strategy.</p>
+
+          <p>Explore guides on formats, archetypes, and themes to help you craft decks that are both powerful and personal. Learn how to balance creatures and spells, fine-tune your mana base, and find synergy between your favorite cards.</p>
+
+          <p>From casual kitchen-table play to competitive events, our goal is to help you understand why decks work — not just what to play. Dive in, experiment, and discover the joy of bringing your ideas to life on the battlefield.</p>
+
+          <p>Welcome to the heart of deckbuilding. Let’s get shuffling.</p>
+        </div>
+
+        <picture id="home-img">
+          <img src="images/wide3-samguay.jpg" alt="Decorative image of a frog that was featured on a MTG card.">
+        </picture>
+      </div>
+    </section>
+
+    <section class="alternate-section">
+      <div class="color-decor">
+        <h2>Resources</h2>
+        <div class="container-wide" id="home-resources-align">
+          <div>
+          <h3>Official Databases and Tools</h3>
+          <ul>
+              <li><a href="https://scryfall.com/">Scryfall</a>: Comprehensive card search with filters for keywords, mechanics, legality, and flavor.</li>
+              <li><a href="https://gatherer.wizards.com/">Gatherer</a>: Wizards of the Coast’s official card database.</li>
+              <li><a href="https://magic.wizards.com/en/mtgarena">MTG Arena</a>: Magic Online deck builders — Built-in tools for creating and testing decks digitally.</li>
+          </ul>
+
+          <h3>Deck-Building and Sharing Sites</h3>
+          <ul>
+              <li><a href="https://moxfield.com/">Moxfield</a>: Popular for building, organizing, and sharing decks (especially for Commander).</li>
+              <li><a href="https://archidekt.com/">Archidekt</a>: Visual deckbuilder with drag-and-drop functionality and price tracking.</li>
+              <li><a href="https://tappedout.net/">TappedOut</a>: Long-running community site for posting decks and getting feedback.</li>
+              <li><a href="https://www.mtggoldfish.com/">MTGGoldfish</a>: Offers decklists, metagame analysis, and budget-friendly builds.</li>
+          </ul>
+          </div>
+
+          <div>
+          <h3>Content and Community Inspiration</h3>
+          <ul>
+              <li>YouTube channels like The Command Zone, Tolarian Community College, and MTGGoldfish showcase strategies, gameplay, and deck techs.</li>
+              <li>Podcasts and Twitch streams discuss deckbuilding trends and Commander brews.</li>
+              <li>Reddit (r/magicTCG, r/EDH, r/BudgetBrews) offer discussion, feedback, and inspiration.</li>
+              <li>Discord communities and local game stores allow players to share ideas and test decks together.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#top">Jump to Top</a></p>
+  </footer>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+</html>

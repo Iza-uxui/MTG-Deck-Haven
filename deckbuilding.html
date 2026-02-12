@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- I used CoPilot to help me stucture all of the code below. -->
+<head>
+  <link rel="icon" href="images/favicon.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/site.css" rel="stylesheet">
+  <title>MTG: Deck Haven</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!-- The empty container helps center my h1 and right-align my hamburger icon. It's being used stylistically here. -->
+      <div class="empty-container">
+      </div>
+      <h1 id="top">MTG: Deck Haven</h1>
+      <button id="ham" aria-label="Show website navigation.">
+        <img src="images/hamburger-icon.svg" alt="Hamburger menu icon.">
+      </button>
+    </div>
+    <nav class="hidden" id="nav-interact">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="formats.html">Popular Formats</a></li>
+        <li><a href="ideation.html">Ideation Strategy</a></li>
+        <li><a class="current-page" href="deckbuilding.html">Deckbuilding</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="deckbuilding-section">
+      <div class="color-decor">
+        <h2>Deckbuilding 101</h2>
+        <ol id="deck-list">
+          <li>
+            <h3>Decide what format you want to play.</h3>
+            <p>Format determines deck size, card legality, and whether you should plan for sideboards, multiplayer politics, or fast 1v1 play. Quick reminders:</p>
+            <ul>
+              <li><strong>Standard / Modern / Other 60-Card Constructed:</strong> 60+ cards, up to 4 copies of most cards, 15-card sideboard typical.</li>
+              <li><strong>Commander (EDH):</strong> 100 cards, singleton (one copy of each non-basic land), a legendary commander defines color identity, multiplayer focus.</li>
+              <li><strong>Limited (Draft/Sealed):</strong> 40-card decks built from opened packs.</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Choose deck theme / win condition.</h3>
+            <p><strong>Pick a clear goal:</strong> Deal fast damage (aggro), outvalue opponents (midrange), control and win late (control), assemble combo pieces (combo), swarm with creatures (go-wide), or build around a commander/single card. Your theme decides the card types you prioritize and how you balance your curve, interaction, and mana.</p>
+          </li>
+
+          <li>
+            <h3>Determine which cards fit your theme.</h3>
+            <p>Once you’ve chosen a theme or strategy, start selecting cards that support it. For each card, ask yourself: “Does this help me achieve my deck’s goal?”</p>
+            <ul>
+              <li><strong>Creatures / Main Threats:</strong> These are usually the backbone of your deck. If your theme is aggressive, pick creatures that are cheap and deal damage quickly. If your theme is more about building a strong board or combo, pick creatures that create advantages, generate tokens, or interact well with other cards in your deck.</li>
+              <li><strong>Spells / Support and Interaction:</strong> These include removal (to deal with opposing creatures or threats), buffs (to make your creatures stronger), or other spells that advance your strategy. Choose spells that directly complement your theme. For example, if your deck focuses on artifacts, include spells that give extra benefit to artifacts.</li>
+              <li><strong>Synergy and Combos:</strong> Look for cards that work well together. A good deck often has cards that enhance each other, such as creatures that create tokens and spells that make tokens stronger.</li>
+              <li><strong>Consistency / Helpers:</strong> Include cards that help you draw more cards, search for specific cards, or fix your mana. These aren’t always flashy, but they help your deck operate smoothly.</li>
+            </ul>
+
+            <h4>Tips for new players:</h4>
+            <ul>
+              <li>Focus on cards that clearly support your strategy. Avoid adding cards just because they look strong.</li>
+              <li>Look for cards that have synergy with multiple other cards in your deck.</li>
+              <li><strong>Keep an eye on your deck’s flow:</strong> Early plays, midgame options, and ways to finish the game.</li>
+            </ul>
+            <p>By thinking in terms of roles, creatures, support spells, synergy, and helpers, you can build a deck where every card contributes to your theme, making it more consistent and fun to play.</p>
+          </li>
+
+          <li>
+            <h3>Remove weaker cards and balance the deck.</h3>
+            <ul>
+              <li><strong>Cut from the top:</strong> Remove the least-impactful card first; keep trimming until you hit your target counts.</li>
+              <li><strong>Watch ratios:</strong> Creatures vs spells, lands vs nonlands, number of answers.</li>
+              <li><strong>Mana curve check:</strong> Plot the converted mana cost curve. Ensure you can play something meaningful on turns 1–4 and still have cards for the late game. Adjust card counts to smooth the mana curve.</li>
+            </ul>
+          </li>
+
+          <li>
+            <h3>Playtest and refine.</h3>
+            <ul>
+              <li><strong>Record outcomes:</strong> Track losses and why they happened (mana screw, too slow, couldn’t answer X).</li>
+              <li><strong>Iterate in small steps:</strong> Change 1–3 cards per session so you can judge the effect.</li>
+              <li><strong>Tech to meta:</strong> If you face lots of aggro, add more early blockers and cheap removal. If control is common, add more threats and tutors. In Constructed, use your sideboard to swap answers between games.</li>
+              <li><strong>Commander-specific:</strong> Observe multiplayer politics — you may need more targeted removal or protection. Adjust to the social environment (casual vs competitive).</li>
+            </ul>
+          </li>
+        </ol>
+        <picture id="deckbuilding-img">
+          <img src="images/wide1-ryanquintal.jpg" alt="Shows an image of five different MTG basic lands spread out on a surface. This includes a Mountain, Plains, Island, Forest, and Swamp.">
+        </picture>
+      </div>
+    </section>
+
+    <section class="alternate-section">
+      <div class="color-decor">
+        <h2>Quick Deck-Building Cheat Sheets</h2>
+        <div class="container-wide start-align cheat-sheet">
+        <article>
+          <h3>60-card Aggro (fast, creature-focused decks)</h3>
+          <ul>
+            <li><em>Lands:</em> 20–22</li>
+            <li><em>Creatures / Threats:</em> 22–26</li>
+            <li><em>Noncreature Spells:</em> 12–16</li>
+            <li><em>Sideboard (Optional):</em> 15</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>60-card Control (slower, reactive decks)</h3>
+          <ul>
+            <li><em>Lands:</em> 24–26</li>
+            <li><em>Creatures / Finishers:</em> 6–10</li>
+            <li><em>Noncreature Spells:</em> 24–28</li>
+            <li><em>Sideboard:</em> 15</li>
+          </ul>
+        </article>
+        </div>
+
+        <div class="container-wide start-align cheat-sheet">
+        <article>
+          <h3>Commander / EDH (100-card singleton, multiplayer)</h3>
+          <ul>
+            <li><em>Lands:</em> 36–40</li>
+            <li><em>Creatures / Threats:</em> 25–35</li>
+            <li><em>Ramp / Mana Generators:</em> 8–12</li>
+            <li><em>Interaction / Answers:</em> 8–15</li>
+            <li><em>Card Draw / Tutors / Consistency:</em> 6–12</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Limited (Draft / Sealed, 40-card decks)</h3>
+          <ul>
+            <li><em>Lands:</em> 17</li>
+            <li><em>Creatures / Threats:</em> 14–18</li>
+            <li><em>Noncreature Spells:</em> 5–9</li>
+          </ul>
+        </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#top">Jump to Top</a></p>
+  </footer>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+</html>

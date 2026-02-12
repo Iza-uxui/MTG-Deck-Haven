@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- I used CoPilot to help me stucture all of the code below. -->
+<head>
+  <link rel="icon" href="images/favicon.svg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/site.css" rel="stylesheet">
+  <title>MTG: Deck Haven</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!-- The empty container helps center my h1 and right-align my hamburger icon. It's being used stylistically here. -->
+      <div class="empty-container">
+      </div>
+      <h1 id="top">MTG: Deck Haven</h1>
+      <button id="ham" aria-label="Show website navigation.">
+        <img src="images/hamburger-icon.svg" alt="Hamburger menu icon.">
+      </button>
+    </div>
+    <nav class="hidden" id="nav-interact">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="formats.html">Popular Formats</a></li>
+        <li><a class="current-page" href="ideation.html">Ideation Strategy</a></li>
+        <li><a href="deckbuilding.html">Deckbuilding</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="color-decor">
+      <h2>Deck Inspiration</h2>
+        <div id="ideation-resources-align" class="container-wide start-align">
+          <div>
+            <h3>Theme</h3>
+            <p>In Magic: The Gathering, themes help players shape decks that reflect their interests and playstyle. Some draw inspiration from story themes, building around iconic characters, planes, or events in the game’s lore. Others explore mechanical themes, focusing on specific abilities or strategies—like lifegain, artifacts, or creature sacrifice.</p>
+            <p>Tribal themes are another favorite, where decks revolve around a shared creature type such as Elves, Zombies, or Dragons. Some players choose visual or flavor themes, uniting cards through artwork, colors, or tone. More competitively minded players may follow meta themes, taking cues from proven strategies in popular formats.</p>
+            <p>Themes give structure and direction to deckbuilding, helping players learn the game’s depth while expressing their creativity.</p>
+          </div>
+          <picture>
+              <source srcset="images/wide12-gijsdeck.png" media="(min-width: 825px)">
+              <img src="images/wide6-gijsdeck.png" alt="Four MTG cards that follow a Zombie tribal theme. The cards are: Carrion Feeder, Gravecrawler, Shepherd of Rot, and Undead Augur.">
+          </picture>
+        </div>
+      </div>
+
+      <div class="color-decor">
+        <div class="container-wide">
+          <div class="ideation-resources-align-2">
+            <h3>Individual Card</h3>
+            <p>Many Magic: The Gathering players find inspiration in a single, standout card—especially in the Commander format, where one legendary creature or planeswalker leads the deck. Often, players start with a Commander whose abilities suggest a clear strategy: a creature that draws cards for casting instants might inspire a spell-heavy deck, while one that strengthens tokens could lead to a go-wide army build.</p>
+            <p>Sometimes, the chosen card isn’t a Commander at all—it might be a favorite spell, artifact, or enchantment that feels powerful or flavorful enough to build around. In these cases, players craft the rest of the deck to support or maximize that card’s effect, ensuring it shines whenever it’s played.</p>
+            <p>Whether chosen for mechanics, story, or personal connection, a single card can be the creative spark that shapes an entire deck’s identity.</p>
+          </div>
+          <div class="container">
+            <button id="button1" aria-label="Show more information about a deck centered around the 'Garna, Bloodfist of Keld' card.">
+              Click to learn more!
+              <img src="images/narrow2-andreykuzinskiy.webp" alt="Example of a card you could center your deck around. The card is: Garna, Bloodfist of Keld.">
+            </button>
+            <button id="button2" aria-label="Show more information about a deck centered around the 'Legolas, Master Archer' card.">
+              Click to learn more!
+                <img src="images/narrow4-tylerjacobson.webp" alt="Example of a card you could center your deck around. The card is: Legolas, Master Archer.">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="transparent hidden" id="modA-div">
+        <dialog id="modA">
+          <section>
+            <div class="container">
+              <h3>Individual Card</h3>
+              <button id="xA" aria-label="Exit the card information menu.">
+                x
+              </button>
+            </div>
+            <figure>
+              <img class="hidden" id="mod1" src="images/narrow2-andreykuzinskiy.webp" alt="Example of a card you could center your deck around. The card is: Garna, Bloodfist of Keld.">
+            </figure>
+            <figure>
+              <img class="hidden" id="mod2" src="images/narrow4-tylerjacobson.webp" alt="Example of a card you could center your deck around. The card is: Legolas, Master Archer.">
+            </figure>
+            <p class="hidden" id="mod1desc">Garna is a wonderful commander to create what's known as a "sacrifice deck." Your aim is to create a bunch of disposable creatures and sacrifice them. The payoffs come from enchantments or other creatures who reward sacrifices.</p>
+            <p class="hidden" id="mod2desc">Legolas is a wonderful commander to create what's known as a "voltron deck." The aim here is to enchant Legolas with as many buffs as possible to give him a lot of power and toughness.</p>
+          </section>
+        </dialog>
+      </div>
+
+      <div class="color-decor">
+        <div class="container-wide">
+        <div class="ideation-resources-align-2">
+          <h3>Competitiveness</h3>
+          <p>For many Magic: The Gathering players, deckbuilding is shaped by how competitive they want their games to be. Some prefer casual decks, built for fun, creativity, and social play—often focused on interesting combos, flavorful themes, or favorite cards rather than pure efficiency. Others aim for competitive decks, designed to win consistently through tight strategies, optimized card choices, and efficient mana curves.</p>
+          <p>In formats like Commander, players often talk about “power levels,” tuning their decks to match their playgroup’s expectations—from relaxed, experimental builds to finely tuned, combo-driven lists. Whether casual or competitive, focusing on the right balance helps players enjoy games that feel fair, challenging, and rewarding.</p>
+        </div>
+        <div class="container">
+          <figure>
+              <img src="images/narrow3-serenamalyon.webp" alt="Example of a really competitive and powerful card. The card is: Rhystic Study.">
+          </figure>
+          <figure>
+              <img src="images/narrow5-velinystrom.webp" alt="Example of a really competitive and powerful card. The card is: The One Ring.">
+          </figure>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="alternate-section">
+      <div class="color-decor">
+        <h2>Popular Deck Archetypes</h2>
+      </div>
+      <div class="container-box">
+      <div class="color-decor">
+        <h3>Aggro</h3>
+        <p>Aggro decks aim to win as quickly as possible by playing lots of cheap creatures and damage-dealing spells. The strategy is to apply constant pressure on your opponent before they can set up their defenses. Aggro decks often have a low mana curve, meaning most of their cards cost little mana to cast, allowing them to start attacking immediately.</p>
+        <picture>
+          <img src="images/wide9-jasonaengle.jpg" alt="Art that was featured on a MTG card. It depicts one person slashing a blade at another.">
+        </picture>
+      </div>
+
+      <div class="color-decor">
+        <h3>Midrange</h3>
+        <p>Midrange decks are flexible and focus on efficient threats and answers. They tend to be stronger in the midgame, using creatures, removal, and value-generating spells to control the board while steadily building toward victory. Midrange decks balance offense and defense, adjusting their play based on the opponent’s strategy.</p>
+        <picture>
+          <img src="images/wide7-magalivilleneuve.jpg" alt="Art that was featured on a MTG card. It depicts a person holding some kind of glowing object or weapon.">
+        </picture>
+      </div>
+      </div>
+
+      <div class="container-box">
+      <div class="color-decor">
+        <h3>Control</h3>
+        <p>Control decks focus on slowing down the game and stopping opponents from executing their plans. They use counterspells, removal, board wipes, and card draw to maintain advantage and survive until they can play their powerful finishers. Control decks often have fewer creatures and rely on answers rather than aggressive threats.</p>
+        <picture>
+          <img src="images/wide8-magalivilleneuve.jpg" alt="Art that was featured on a MTG card. It depicts a spellcaster who has the upper hand against someone else.">
+        </picture>
+      </div>
+
+      <div class="color-decor">
+        <h3>Combo</h3>
+        <p>Combo decks aim to assemble a specific set of cards that create a powerful effect or instant win. Instead of playing incremental threats, they focus on drawing and protecting the pieces of their combo while defending against interaction from opponents. Timing and consistency are key for combo decks.</p>
+        <picture>
+          <img src="images/wide4-samguay.jpg" alt="Art that was featured on a MTG card. It depicts a lizard doing magic on a fish that's floating through the air.">
+        </picture>
+      </div>
+      </div>
+
+      <div class="color-decor">
+        <div id="ideation-resources-align-3" class="container-wide start-align">
+        <div>
+        <h3>Tribal / Theme-Focused</h3>
+        <p>These decks are built around creature types, mechanics, or flavor themes, like Elves, Goblins, Zombies, or artifact-based strategies. While they can borrow elements from other archetypes (aggro, midrange, etc.), the defining feature is that most of the cards synergize around a common theme, creating unique and flavorful gameplay experiences.</p>
+        <p>There are several options to choose from, have fun with it! Let your creativity shine!</p>
+        </div>
+        <picture>
+          <img src="images/wide10-rovinacai.jpg" alt="Art that was featured on a MTG card. It depicts many phantasmal hands reaching towards someone who seems to be slowly vanishing from the magic of those hands.">
+        </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="#top">Jump to Top</a></p>
+  </footer>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/interactivity.js"></script>
+</body>
+</html>
